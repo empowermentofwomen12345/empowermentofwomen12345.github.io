@@ -1,0 +1,450 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Women Empowerment — community, programs and stories to uplift women.">
+  <title>WomenEmpower — Empowering societya</title>
+
+  <!-- Bootstrap 5 CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --brand: #3949ab;
+      /* deep blue */
+      --accent: #ce93d8;
+      /* light purple */
+      --secondary: #7e57c2;
+      /* soft purple */
+      --muted: #6c757d;
+      --light-bg: #fafbff;
+      --card-bg: #ffffff;
+      --glass: rgba(255, 255, 255, 0.6);
+    }
+
+    * {
+      box-sizing: border-box
+    }
+
+    html,
+    body {
+      height: 100%
+    }
+
+    body {
+      font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+      background: var(--light-bg);
+      color: #222;
+    }
+
+    /* NAV */
+    .navbar {
+      background: var(--brand);
+      border-bottom: 3px solid var(--accent);
+    }
+
+    .navbar .nav-link,
+    .navbar-brand {
+      color: white !important
+    }
+
+    .navbar .nav-link:hover {
+      color: var(--accent) !important
+    }
+
+    /* HERO */
+    .hero {
+      background: linear-gradient(135deg, rgba(57, 73, 171, 0.95), rgba(206, 147, 216, 0.95));
+      color: white;
+    }
+
+    .hero .display-5 {
+      line-height: 1.05
+    }
+
+    .badge-pill {
+      border-radius: 999px
+    }
+
+    /* CARDS */
+    .card-quiet {
+      background: var(--card-bg);
+      border: 1px solid rgba(0, 0, 0, 0.05);
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(20, 30, 60, 0.06);
+      transition: all .25s ease
+    }
+
+    .card-quiet:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 14px 32px rgba(20, 30, 60, 0.12)
+    }
+
+    /* BUTTON */
+    .btn-brand {
+      background: var(--brand);
+      color: white;
+      border-radius: 50px;
+      border: none
+    }
+
+    .btn-brand:hover {
+      background: #303f9f
+    }
+
+    /* FEATURES */
+    .feature-icon {
+      width: 64px;
+      height: 64px;
+      border-radius: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--accent);
+      color: #311b92;
+      font-size: 30px
+    }
+
+    /* FOOTER */
+    footer {
+      background: linear-gradient(90deg, var(--brand), var(--secondary));
+      color: white
+    }
+
+    footer a {
+      color: #fff3cd;
+      text-decoration: none
+    }
+
+    /* small helpers */
+    .lead-quiet {
+      color: var(--muted)
+    }
+
+    .muted-small {
+      color: var(--muted);
+      font-size: .95rem
+    }
+
+    /* Responsive tweaks */
+    @media (max-width:767px) {
+      .hero {
+        padding: 3rem 1rem
+      }
+
+      .feature-icon {
+        width: 56px;
+        height: 56px
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-uppercase" href="#">WomenEmpower</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="home.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="programs.html">Programs</a></li>
+          <li class="nav-item"><a class="nav-link" href="stories.html">Stories</a></li>
+          <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item ms-2"><a class="btn btn-light text-primary fw-semibold rounded-pill"
+              href="donate.html">Donate</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero py-6 text-center text-lg-start">
+    <div class="container py-5">
+      <div class="row align-items-center">
+        <div class="col-lg-7">
+          <span class="badge bg-white text-dark mb-3 badge-pill px-3 py-2">Non-profit • Dhaka</span>
+          <h1 class="display-5 fw-bold">Empowering Women. Building Futures.</h1>
+          <p class="lead text-white opacity-85">Education, entrepreneurship and community — we create sustainable
+            opportunities for women to lead and thrive.</p>
+          <div class="mt-4 d-flex flex-wrap gap-2">
+            <a href="#programs" class="btn btn-lg btn-brand me-2">Our Programs</a>
+            <a href="#get-involved" class="btn btn-lg btn-outline-light rounded-pill">Get Involved</a>
+            <a href="#stories" class="btn btn-lg btn-light text-primary rounded-pill">Read Stories</a>
+          </div>
+        </div>
+        <div class="col-lg-5 d-none d-lg-block">
+          <!-- Decorative card stack -->
+          <div class="card card-quiet p-4" style="border-radius:22px;">
+            <div class="d-flex align-items-start gap-3">
+              <div class="feature-icon">🌸</div>
+              <div>
+                <h6 class="mb-1">Community Growth</h6>
+                <p class="small lead-quiet mb-0">Locally-led programs that respect culture and ambition.</p>
+              </div>
+            </div>
+            <hr>
+            <div class="d-flex align-items-start gap-3">
+              <div class="feature-icon">🎓</div>
+              <div>
+                <h6 class="mb-1">Practical Learning</h6>
+                <p class="small lead-quiet mb-0">Hands-on training in digital skills, tailoring and small-business
+                  management.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="py-5">
+    <div class="container">
+      <div class="row g-4 align-items-center">
+        <div class="col-lg-6">
+          <h2 class="fw-bold" style="color:var(--brand)">Who we are</h2>
+          <p class="lead-quiet">WomenEmpower supports women to learn, lead, and live confidently. We focus on vocational
+            training, leadership development, and access to small capital — all delivered by mentors and community
+            leaders.</p>
+          <ul class="list-unstyled">
+            <li class="mb-2">💙 Vocational training & microfinance</li>
+            <li class="mb-2">💙 Leadership & confidence building</li>
+            <li class="mb-2">💙 Mentorship & peer networks</li>
+          </ul>
+          <a href="#contact" class="btn btn-outline-primary rounded-pill mt-2">Reach Out</a>
+        </div>
+        <div class="col-lg-6">
+          <div class="row g-3">
+            <div class="col-6">
+              <div class="card card-quiet p-3 text-center">
+                <div class="feature-icon mx-auto mb-2">🤝</div>
+                <h6 class="mb-0">Collaboration</h6>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="card card-quiet p-3 text-center">
+                <div class="feature-icon mx-auto mb-2">🎯</div>
+                <h6 class="mb-0">Impact</h6>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="card card-quiet p-3 text-center">
+                <div class="feature-icon mx-auto mb-2">🎓</div>
+                <h6 class="mb-0">Education</h6>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="card card-quiet p-3 text-center">
+                <div class="feature-icon mx-auto mb-2">💼</div>
+                <h6 class="mb-0">Entrepreneurship</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROGRAMS -->
+  <section id="programs" class="py-5 bg-white">
+    <div class="container">
+      <h3 class="fw-bold mb-4 text-center" style="color:var(--brand)">Programs</h3>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100 card-quiet p-4">
+            <div class="d-flex align-items-start gap-3">
+              <div class="feature-icon">🧵</div>
+              <div>
+                <h5>Skill Development</h5>
+                <p class="small lead-quiet">Tailoring, digital literacy and creative arts with real-world projects and
+                  certification.</p>
+              </div>
+            </div>
+            <div class="mt-3"><a href="#" class="stretched-link">Learn more →</a></div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 card-quiet p-4">
+            <div class="d-flex align-items-start gap-3">
+              <div class="feature-icon">💸</div>
+              <div>
+                <h5>Entrepreneur Support</h5>
+                <p class="small lead-quiet">Microloans, business clinics and mentorship for women-led startups.</p>
+              </div>
+            </div>
+            <div class="mt-3"><a href="#" class="stretched-link">Learn more →</a></div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 card-quiet p-4">
+            <div class="d-flex align-items-start gap-3">
+              <div class="feature-icon">🗣️</div>
+              <div>
+                <h5>Leadership Circles</h5>
+                <p class="small lead-quiet">Peer-led sessions to build confidence, public speaking and community
+                  leadership.</p>
+              </div>
+            </div>
+            <div class="mt-3"><a href="#" class="stretched-link">Learn more →</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STORIES / TESTIMONIALS -->
+  <section id="stories" class="py-5">
+    <div class="container">
+      <h3 class="fw-bold text-center mb-4" style="color:var(--brand)">Stories of Change</h3>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card card-quiet p-3 h-100">
+            <div class="d-flex gap-3 align-items-center">
+              <img src="https://via.placeholder.com/72" alt="profile" class="rounded-circle" width="72" height="72">
+              <div>
+                <h6 class="mb-0">Shahana</h6>
+                <p class="small muted-small mb-0">From tailoring student to small-business owner — doubled her household
+                  income.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card card-quiet p-3 h-100">
+            <div class="d-flex gap-3 align-items-center">
+              <img src="https://via.placeholder.com/72" alt="profile" class="rounded-circle" width="72" height="72">
+              <div>
+                <h6 class="mb-0">Afsana</h6>
+                <p class="small muted-small mb-0">Completed digital skills training and now freelances online supporting
+                  her family.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card card-quiet p-3 h-100">
+            <div class="d-flex gap-3 align-items-center">
+              <img src="https://via.placeholder.com/72" alt="profile" class="rounded-circle" width="72" height="72">
+              <div>
+                <h6 class="mb-0">Rumana</h6>
+                <p class="small muted-small mb-0">Joined our leadership circle and now leads a local women’s
+                  cooperative.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EVENTS / CALL TO ACTION -->
+  <section id="events" class="py-5 bg-white">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-8">
+          <h4 class="fw-bold" style="color:var(--brand)">Upcoming Workshop</h4>
+          <p class="lead-quiet mb-2">Business Basics for Micro-Enterprises — hands-on 2-day workshop with mentors and
+            microloan advisors.</p>
+          <p class="small muted-small mb-0">Next cohort starts: <strong>November 10, 2025</strong></p>
+        </div>
+        <div class="col-lg-4 text-lg-end mt-3 mt-lg-0">
+          <a href="#contact" class="btn btn-brand">Join Workshop</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GET INVOLVED -->
+  <section id="get-involved" class="py-5">
+    <div class="container">
+      <h3 class="fw-bold text-center mb-4" style="color:var(--brand)">Get Involved</h3>
+      <div class="row g-3 justify-content-center">
+        <div class="col-md-4">
+          <div class="card card-quiet p-4 text-center h-100">
+            <h5>Volunteer</h5>
+            <p class="small lead-quiet">Share skills, mentor participants or help run local events.</p>
+            <a href="#contact" class="stretched-link">Sign up →</a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card card-quiet p-4 text-center h-100">
+            <h5>Partner</h5>
+            <p class="small lead-quiet">Organisations can partner on training, funding and impact measurement.</p>
+            <a href="#contact" class="stretched-link">Contact us →</a>
+          </div>
+        </div>
+        <div class="col-md-4" id="donate">
+          <div class="card card-quiet p-4 text-center h-100">
+            <h5>Donate</h5>
+            <p class="small lead-quiet">Support scholarships, materials and microloan capital.</p>
+            <a href="#contact" class="stretched-link">Donate →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="py-5 bg-light">
+    <div class="container">
+      <div class="row g-4 align-items-start">
+        <div class="col-lg-6">
+          <h4 class="fw-bold mb-3" style="color:var(--brand)">Contact Us</h4>
+          <form action="https://formspree.io/f/mwkzqvbp" method="POST" class="card card-quiet p-4">
+            <div class="mb-3">
+              <label class="form-label">Name</label>
+              <input type="text" name="name" class="form-control" placeholder="Your name" required>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Email</label>
+              <input type="email" name="email" class="form-control" placeholder="you@example.com" required>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Message</label>
+              <textarea class="form-control" name="message" rows="4" placeholder="How can we help?" required></textarea>
+            </div>
+            <button class="btn btn-brand">Send Message</button>
+          </form>
+        </div>
+        <div class="col-lg-6">
+          <div class="card card-quiet p-4">
+            <h6 class="fw-bold mb-2">Our Office</h6>
+            <p class="small lead-quiet mb-1">Dhaka, Bangladesh</p>
+            <p class="small lead-quiet mb-1">Email: <a href="mailto:info@womenempower.org">info@womenempower.org</a></p>
+            <p class="small lead-quiet mb-3">Phone: +880 1X-XXXX-XXXX</p>
+            <div class="ratio ratio-16x9 border rounded overflow-hidden">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3" width="100%" height="100%"
+                style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="py-4">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+      <div class="mb-2 mb-md-0">© 2025 WomenEmpower — All rights reserved</div>
+      <div>
+        <a class="me-3 small" href="#">Privacy</a>
+        <a class="me-3 small" href="#">Terms</a>
+        <a class="small" href="#contact">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
